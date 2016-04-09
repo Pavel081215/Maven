@@ -2,6 +2,9 @@
   <library name="junit-4.12.jarjunit-4.12">
     <CLASSES>
       <root url="jar://D:/Библиотеки/junit-4.12.jarjunit-4.12.jar!/" />
+      <root url="jar://D:/Библиотеки/testng-6.9.10.jar!/" />
+      <root url="jar://D:/Библиотеки/jcommander-1.48.jar!/" />
+      <root url="jar://D:/Библиотеки/bsh-2.0b4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

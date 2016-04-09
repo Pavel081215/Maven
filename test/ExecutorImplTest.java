@@ -14,7 +14,7 @@ public class ExecutorImplTest {
     private Validator<Number> validator;
     private Task<Long> task1;
     private Task<Long> task10;
-    private ExecutorImpl<Number> executorImpl = new ExecutorImpl();
+    private ExecutorImpl<Number> executorImpl = new ExecutorImpl<>();
     private List<Long> expected = new ArrayList<>();
 
     @Test
@@ -26,7 +26,7 @@ public class ExecutorImplTest {
         executorImpl.addTask(task10);
         executorImpl.addTask(task1, validator);
         executorImpl.execute();
-        List actuals = new ArrayList();
+        List<Number> actuals = new ArrayList<>();
         expected.add(113L);
         expected.add(13L);
         // expected.add(-197L);
@@ -49,7 +49,7 @@ public class ExecutorImplTest {
         executorImpl.addTask(task10);
         executorImpl.addTask(task1, validator);
         executorImpl.execute();
-        List actuals = new ArrayList();
+        List<Number> actuals = new ArrayList<>();
         expected.add(-7L);
         //expected.add(3);
         actuals.addAll(executorImpl.getInvalidResults());
