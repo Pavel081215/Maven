@@ -1,21 +1,21 @@
-import org.junit.Assert;
+
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.testng.Assert.*;
-
 /**
  * Created by Pavel on 05.04.2016.
  */
 public class ExecutorImplTestNG {
+
     private Validator<Number> validator;
     private Task<Long> task1;
     private Task<Long> task10;
     private ExecutorImpl<Number> executorImpl = new ExecutorImpl();
     private List<Long> expected = new ArrayList<>();
-
 
     @Test
     public void getInvalidResults() throws Exception {
@@ -31,7 +31,6 @@ public class ExecutorImplTestNG {
         //expected.add(3);
         actuals.addAll(executorImpl.getInvalidResults());
         Assert.assertEquals(expected, actuals);
-
 
     }
 
